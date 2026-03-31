@@ -2,7 +2,9 @@
 
 import { useState, useRef } from "react";
 
-const API_URL = "http://127.0.0.1:8000/predict";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+const API_URL = `${API_BASE}/predict`;
+
 
 const CROPS = [
   {
@@ -123,7 +125,7 @@ export default function DiseasePredictor() {
       setResult({ ...data, crop: selectedCrop });
     } catch (err) {
       if (err.name === "TypeError" || err.message.includes("Failed to fetch")) {
-        setError("Cannot reach the prediction server. Make sure the backend is running at http://127.0.0.1:8000.");
+        setError(`Cannot reach the prediction server. Make sure the backend is running at ${API_BASE}.`);
       } else {
         setError(err.message);
       }
