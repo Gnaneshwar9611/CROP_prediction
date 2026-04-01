@@ -1,10 +1,9 @@
 # Crop Disease Prediction Platform
 
-![AgriScan Logo/Banner](placeholder-for-banner.png) <!-- 📸 Add a screenshot or banner here -->
 
 A full-stack, AI-powered web application for identifying crop diseases from plant leaf images. This platform allows users to select a crop type (Chilli, Rice, Finger Millet, Sugarcane) and upload an image of a leaf to receive an instant disease diagnosis and a confidence score.
 
-## ✨ Features
+#Features
 - **Intelligent Disease Detection**: Utilizes deep learning Keras (`.h5`) models.
 - **Offline Capable**: Models are loaded directly from the local filesystem—no external APIs or internet connection required for inference.
 - **Crop Variety**: Supports multiple crops including Paddy (Rice), Chilli, Finger Millet (Ragi), and Sugarcane.
@@ -17,7 +16,7 @@ A full-stack, AI-powered web application for identifying crop diseases from plan
 - **Machine Learning**: TensorFlow / Keras
 - **Image Processing**: Pillow, NumPy
 
-## 📂 Project Structure
+#Project Structure
 ```
 CROP_prediction/
 ├── backend/
@@ -36,7 +35,7 @@ CROP_prediction/
 └── LICENSE                # MIT License
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v18+)
@@ -81,15 +80,12 @@ The Next.js frontend will start running on `http://localhost:3000`.
 ### 5. Access the Application
 Open your web browser and navigate to `http://localhost:3000` to interact with the platform.
 
-## 📸 Screenshots
-<!-- 📸 Add actual screenshots of your application here -->
-*Add screenshots of the landing page, upload workflow, and prediction results.*
 
-## 🔮 Future Improvements
+## Future Improvements
 - [ ] Add more crops (e.g., Tomato, Potato).
 - [ ] Incorporate treatment recommendations and agricultural prevention tips.
 - [ ] Implement user authentication to track historical diagnosis.
 - [ ] Deploy the platform to managed cloud services (Vercel, Render, AWS).
 
-## 📄 License
+##License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
