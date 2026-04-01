@@ -1,4 +1,4 @@
-# AgriScan - Crop Disease Prediction Platform
+# Crop Disease Prediction Platform
 
 ![AgriScan Logo/Banner](placeholder-for-banner.png) <!-- 📸 Add a screenshot or banner here -->
 
